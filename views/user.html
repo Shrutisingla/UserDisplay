@@ -1,0 +1,9 @@
+<div class="user-page">
+  <strong class="user-id">Posts of user ID : {{id}}</strong>
+  <div ng-repeat="user in currentUser">
+    <div class="user-section">
+      <strong>{{user.id}}: {{user.title}}</strong>
+      <div class="user-body">Content:{{user.body}}</div>
+    </div>
+  </div>
+</div>
