@@ -5,24 +5,22 @@
     .controller('MainController', MainController)
     .controller('UserController', UserController);
 
-  MainController.$inject = ['LocalStorage', 'QueryService', '$http', '$scope'];
-  function MainController(LocalStorage, QueryService, $http, $scope) {
-    var self = this;
+  MainController.$inject = ['LocalStorage', 'QueryService', '$http', '$scope', 'CONSTANTS'];
+  function MainController(LocalStorage, QueryService, $http, $scope, CONSTANTS) {
     this.usersList = [];
     this.getUsersList = function() {
-      $http({method: 'GET', url: 'https://jsonplaceholder.typicode.com/users'}).then(function(response) {
+      $http({method: 'GET', url: CONSTANTS.API_URL + 'users'}).then(function(response) {
         $scope.usersList = response.data; // response data
       });
     };
     this.getUsersList();
   }
 
-  UserController.$inject = ['LocalStorage', 'QueryService', '$http', '$scope','$routeParams'];
-  function UserController(LocalStorage, QueryService, $http, $scope, $routeParams) {
-    var self = this;
+  UserController.$inject = ['LocalStorage', 'QueryService', '$http', '$scope','$routeParams', 'CONSTANTS'];
+  function UserController(LocalStorage, QueryService, $http, $scope, $routeParams, CONSTANTS) {
     $scope.id = $routeParams.id;
     this.getUser = function() {
-      $http({method: 'GET', url: 'https://jsonplaceholder.typicode.com/posts?userId=' + $scope.id}).then(function(response) {
+      $http({method: 'GET', url: CONSTANTS.API_URL + 'posts?userId=' + $scope.id}).then(function(response) {
         $scope.currentUser = response.data; // response data
       });
     };

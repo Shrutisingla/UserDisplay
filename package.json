@@ -39,7 +39,7 @@
     "build": "gulp build",
     "server": "gulp server",
     "serverbuild": "gulp server-build",
-    "postinstall": "npm install gulp-sass gulp-imagemin --save&&bower install --no-interactive"
+    "postinstall": "npm install gulp-sass gulp-imagemin --save"
   },
   "repository": {
     "type": "git",

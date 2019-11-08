@@ -1,15 +1,18 @@
 <div class="home-page">
-  <div class="heading">List of users
+  <h1 class="heading">List of users</h1>
+  <div class="search-wrap">
     <input ng-model="query" placeholder="Search by name.." />
   </div>
-  <div ng-repeat="user in usersList | filter:query">
-    <a href="/{{user.id}}">
-      <div class="user-box">
-        <strong class="user-name">{{user.id}}. {{user.name}}</strong>
-        <div class="small-text">Website: {{user.website}}</div>
-        <div class="small-text">Phone: {{user.phone}}</div>
-        <div class="small-text">Company: {{user.company.name}}</div
-      </div>
-    </a>
+  <div class="clearfix">
+    <div ng-repeat="user in usersList | filter:query">
+      <a href="/{{user.id}}">
+        <div class="user-box">
+          <strong class="user-name">{{user.id}}. {{user.name}}</strong>
+          <div class="small-text">Website: {{user.website}}</div>
+          <div class="small-text">Phone: {{user.phone}}</div>
+          <div class="small-text">Company: {{user.company.name}}</div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
