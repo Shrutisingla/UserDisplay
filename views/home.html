@@ -5,7 +5,7 @@
   <div ng-repeat="user in usersList | filter:query">
     <a href="/{{user.id}}">
       <div class="user-box">
-        <strong>{{user.id}}. {{user.name}}</strong>
+        <strong class="user-name">{{user.id}}. {{user.name}}</strong>
         <div class="small-text">Website: {{user.website}}</div>
         <div class="small-text">Phone: {{user.phone}}</div>
         <div class="small-text">Company: {{user.company.name}}</div

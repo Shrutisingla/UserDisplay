@@ -16,23 +16,31 @@
     margin-right: 60px;
   }
   .user-box{
-    padding:15px;
     border-radius: 5px;
-    border:1px solid grey;
-    margin:10px;
+    border: 1px solid grey;
+    margin: 10px;
     float: left;
-    width: 30%;
+    width: 20%;
     padding: 10px 20px;
-    min-height: 150px;
+    min-height: 80px;
+    background: #efefef;
+    a{
+      text-decoration: none;
+      color:grey;
+    }
+    .user-name{
+      color:black;
+    }
     &:hover{
       background: white;
       box-shadow:0px 3px 10px rgba(0,0,0,0.3);
       a{
         text-decoration: none;
+        color:blue;
       }
     }
     .small-text{
-      font-size: 12px;
+      font-size: 14px;
       font-family: 'Roboto';
     }
   }

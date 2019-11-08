@@ -32,7 +32,7 @@ IMPORTING MODULES
 *********************/
 
 // alert boxes
-@import "modules/alerts";
+// @import "modules/alerts";
 
 // buttons
 @import "modules/user";
@@ -45,7 +45,7 @@ BASE (MOBILE) SIZE
 *********************/
 
 // styles in base.scss
-@import "breakpoints/base";
+// @import "breakpoints/base";
 
 /*********************
 LARGER MOBILE DEVICES
@@ -53,7 +53,7 @@ LARGER MOBILE DEVICES
 @media only screen and (min-width: 481px) {
 
 	// styles in 481up.scss
-	@import "breakpoints/481up";
+	// @import "breakpoints/481up";
 
 } // end of media query
 
@@ -63,7 +63,7 @@ TABLET & SMALLER LAPTOPS
 @media only screen and (min-width: 768px) {
 
 	// styles in 768up.scss
-	@import "breakpoints/768up";
+	// @import "breakpoints/768up";
 
 } // end of media query
 
@@ -73,7 +73,7 @@ DESKTOP
 @media only screen and (min-width: 1030px) {
 
 	// styles in 1030up.scss
-	@import "breakpoints/1030up";
+	// @import "breakpoints/1030up";
 
 } // end of media query
 
@@ -83,7 +83,7 @@ LARGE VIEWING SIZE
 @media only screen and (min-width: 1240px) {
 
 	// styles in 1240up.scss
-	@import "breakpoints/1240up";
+	// @import "breakpoints/1240up";
 
 } // end of media query
 
